@@ -63,8 +63,8 @@ public class VisitServiceImpl implements VisitService {
 
     @Override
     public void deleteVisit(Long id) {
-        Optional<Visit> applicationToDelete = visitRepository.findById(id);
-        applicationToDelete.ifPresent(application -> visitRepository.delete(application));
+        Optional<Visit> visitToDelete = visitRepository.findById(id);
+        visitToDelete.ifPresent(application -> visitRepository.delete(application));
     }
 
     @Override
