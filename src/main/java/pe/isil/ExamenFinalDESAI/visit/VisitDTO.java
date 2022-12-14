@@ -13,7 +13,7 @@ public class VisitDTO {
     public static VisitDTO whenVisitLocalAlreadeyNoExists() {
         return VisitDTO.builder()
                 .code("500")
-                .message("Dni de afiliado no existe.")
+                .message("DNI de afiliado no existe.")
                 .build();
     }
 

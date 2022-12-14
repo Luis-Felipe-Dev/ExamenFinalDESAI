@@ -15,15 +15,12 @@ public class Visit {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String local;
-
     private String dniAffiliate;
+
+    private String local;
 
     private Date date;
 
     private String hour;
 
-    @ManyToOne
-    @JoinColumn(name = "dni_affiliate_visit")
-    private Affiliate dniAffiliateVisit;
 }

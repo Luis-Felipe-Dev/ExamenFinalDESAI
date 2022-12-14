@@ -24,7 +24,4 @@ public class Affiliate {
     private String lastname;
 
     private String urlPhoto;
-
-    @OneToMany(mappedBy = "dniAffiliateVisit")
-    private List<Visit> visits;
 }
