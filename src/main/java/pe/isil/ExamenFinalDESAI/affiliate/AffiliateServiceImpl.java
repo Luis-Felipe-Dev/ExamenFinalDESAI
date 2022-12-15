@@ -56,8 +56,8 @@ public class AffiliateServiceImpl implements AffiliateService {
 
     @Override
     public void deleteAffiliate(Long id) {
-        Optional<Affiliate> userToDelete = affiliateRepository.findById(id);
-        userToDelete.ifPresent(user -> affiliateRepository.delete(user));
+        Optional<Affiliate> affiliateToDelete = affiliateRepository.findById(id);
+        affiliateToDelete.ifPresent(affiliate -> affiliateRepository.delete(affiliate));
     }
 
     @Override
